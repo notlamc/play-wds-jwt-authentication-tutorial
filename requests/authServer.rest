@@ -1,0 +1,23 @@
+@baseUrl=http://localhost:3000
+@username=
+@refreshToken=
+
+###
+
+POST {{baseUrl}}/login
+Content-Type: application/json
+
+{
+  "username": "{{username}}"
+}
+
+###
+
+POST {{baseUrl}}/refresh
+Content-Type: application/json
+
+{
+  "refreshToken": "{{refreshToken}}"
+}
+
+###
